@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Azapay</title>
+</head>
+
+<body>
+    <!-- THE WHOLE CONTAINER -->
+    <section class="container-xxl p-0 vh-100 d-flex">
+
+        <!-- sidebar -->
+        <section class="col-3 d-flex flex-column">
+            <!-- sidebar logo -->
+            <div class="w-auto pt-3 pb-4 ps-5 d-flex align-items-center">
+                <img style="width:35px; margin-left:-6px;" src="./assets/Azapay ICON 03 1.png" alt="">
+                <h4 class="">azapay</h4>
+            </div>
+            <!-- sidebar links -->
+            <ul class="list-group-flush list-unstyled link-unstyled">
+                <li style="background: rgba(0, 0, 255, 0.1);"
+                    class="py-2 ps-5 list-group-item border-end border-3 border-primary">
+                    <a class="text-decoration-none text-secondary" href="#">
+                        <i class="bi bi-columns-gap pe-2"></i>
+                        Overview
+                    </a>
+                </li>
+                <li class="py-2 ps-5 list-group-item">
+                    <a class="text-decoration-none text-secondary" href="#">
+                        <i class="bi bi-wallet pe-2"></i>
+                        Wallets
+                    </a>
+                </li>
+                <li class="py-2 ps-5 list-group-item">
+                    <a class="text-decoration-none text-secondary" href="#">
+                        <i class="bi bi-arrow-left-right pe-2"></i>
+                        Convert
+                    </a>
+                </li>
+                <li class="py-2 ps-5 list-group-item">
+                    <a class="text-decoration-none text-secondary" href="#">
+                        <i class="bi bi-credit-card pe-2"></i>
+                        Cards & Receipients
+                    </a>
+                </li>
+                <li class="py-2 ps-5 list-group-item">
+                    <a class="text-decoration-none text-secondary" href="#">
+                        <i class="bi bi-journal-text pe-2"></i>
+                        Transactions
+                    </a>
+                </li>
+                <li class="py-2 ps-5 list-group-item">
+                    <a class="text-decoration-none text-secondary" href="#">
+                        <i class="bi bi-cart3 pe-2"></i>
+                        Checkout For Me
+                    </a>
+                </li>
+                <li class="py-2 ps-5 list-group-item">
+                    <a class="text-decoration-none text-secondary" href="#">
+                        <i class="bi bi-bell pe-2"></i>
+                        Notifications
+                    </a>
+                </li>
+                <li class="py-2 ps-5 list-group-item">
+                    <a class="text-decoration-none text-secondary" href="#">
+                        <i class="bi bi-arrow-bar-left pe-2"></i>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- main content -->
+        <section class="col-9">
+            <!-- top nav -->
+            <div class="pe-5 ps-3 bg-white d-flex align-items-center  justify-content-between" style="height: 50px;">
+                <!-- search bar -->
+                <div class="input-group w-auto">
+                    <div class="form-outline">
+                        <input style="box-shadow: none; background:rgba(0, 0, 255, 0.02);"
+                            class="form-control border-0 rounded-0 rounded-start-5" placeholder="Search.." type="search"
+                            id="form1" />
+                    </div>
+                    <button style="background: rgba(0, 0, 255, 0.02);" type="button"
+                        class="border-0 rounded-end-5 pe-3 m-0">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <!-- profile bar -->
+                <div class="d-flex align-items-center">
+                    <a class="text-decoration-none text-secondary" href="#">
+                        <i class="bi bi-question-circle-fill"></i>
+                        Need Help?
+                    </a>
+                    <button class="btn btn-lg p-0 m-3 border-0" type="button">
+                        <i class="bi bi-gear"></i>
+                    </button>
+                    <a style="width: 30px; height:30px;" href="#">
+                        <img class="w-100 h-100 rounded-circle object-fit-cover" src="./assets/client.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- portal -->
+            <div style="height: fit-content;" class="p-3 w-100 h-fit-content bg-light">
+                <!-- portal header -->
+                <h2 class="text-secondary">
+                    Welcome,
+                    <span class="text-dark">Esther</span>
+                    <img src="./assets/twemoji_waving-hand.svg" alt="">
+                </h2>
+
+                <!-- Dual columns -->
+                <div class="d-flex">
+                    <!-- ||COL_1|| -->
+                    <div class="col-7 pe-2 bg-transparent">
+                        <!-- balance card -->
+                        <div class="card p-3 border-0 rounded-4">
+                            <!-- top card -->
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="m-0 text-secondary">Current Balance</h5>
+                                <div class="dropdown">
+                                    <button class="btn btn-light dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./assets/twemoji_flag-nigeria.svg" alt="">&ensp; NGN
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="./assets/twemoji_flag-us-outlying-islands.svg" alt="">&ensp;
+                                                USD
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- balance -->
+                            <h1 class="pt-2 mb-4"><span class="text-primary">NGN</span> 50,000.00</h1>
+                            <!-- bottom card -->
+                            <div class="d-flex justify-content-between align-items-baseline">
+                                <!-- transactions & accounts -->
+                                <div class=" d-flex gap-2">
+                                    <div style="background: rgba(0, 0, 255, 0.02); width:140px;"
+                                        class="d-flex align-items-center gap-2 rounded p-2">
+                                        <img style="width: 38px; height: 38px; background:rgba(0, 0, 255, 0.1); "
+                                            class="rounded-circle p-2" src="./assets/ant-design_stock-outlined.svg"
+                                            alt="">
+                                        <div>
+                                            <h4 class="m-0">650</h4>
+                                            <p style="font-size:12px;" class="m-0">Transactions</p>
+                                        </div>
+                                    </div>
+                                    <div style="background: rgba(0, 0, 255, 0.02); width:140px;"
+                                        class="d-flex align-items-center gap-2 rounded p-2">
+                                        <img style="width: 38px; height: 38px; background:rgba(0, 0, 255, 0.1); "
+                                            class="rounded-circle p-2" src="./assets/arrow-up-short.svg" alt="">
+                                        <div>
+                                            <h4 class="m-0">2</h4>
+                                            <p style="font-size:12px;" class="m-0">Accounts</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- view balance -->
+                                <a style="font-size:12px;" class="text-decoration-none text-secondary" href="#">Wallet
+                                    Balance <img src="./assets/ic_sharp-remove-red-eye.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <!-- Quick Actions -->
+                        <h5 class="mt-4">Quick Action</h5>
+                        <div class="d-flex gap-3">
+                            <button style="font-size:13px;"
+                                class="p-2 d-flex align-items-center rounded-4 justify-content-center gap-1 btn w-50 btn-primary">
+                                <i class="fs-5 bi bi-send-fill"></i>
+                                Send Money
+                            </button>
+                            <button style="font-size:13px; background: rgba(0, 0, 255, 0.1)"
+                                class="p-2 d-flex border-0 align-items-center rounded-4 justify-content-center gap-1 btn w-50 btn-light">
+                                <i class="fs-5 bi bi-plus-circle-fill"></i>
+                                Fund Wallet
+                            </button>
+                        </div>
+                        <!-- Convert Funds -->
+                        <h5 class="mt-4">Convert Funds</h5>
+                        <div class="card rounded-4 border-0 p-4">
+                            <div class="d-flex justify-content-between">
+                                <!-- sender -->
+                                <div class="input-group w-auto d-flex flex-column">
+                                    <label class="fw-bold pb-3" style="font-size:13px;" for="form3` ">Send</label>
+                                    <div style="width:fit-content;"
+                                        class="d-flex align-items-center p-2 rounded border">
+                                        <input style="box-shadow: none; width:100px;"
+                                            class="form-control border-0 fs-5 p-0 fw-bold rounded-0" placeholder="1,000"
+                                            type="number" id="form3" />
+                                        <div class="dropdown">
+                                            <button style="background: rgba(0, 0, 255, 0.1);"
+                                                class="btn btn-light dropdown-toggle border-0" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="./assets/twemoji_flag-us-outlying-islands.svg" alt="">&ensp;
+                                                USD
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="./assets/twemoji_flag-nigeria.svg" alt="">&ensp; NGN
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="mt-5" style="width:30px; height:30px;"
+                                    src="./assets/simple-icons_convertio.svg" alt="">
+                                <!-- reciever -->
+                                <div class="input-group w-auto d-flex flex-column">
+                                    <label class="fw-bold pb-3" style="font-size:13px;" for="form4">Receipient
+                                        Recieves</label>
+                                    <div style="width:fit-content;"
+                                        class="d-flex align-items-center p-2 rounded border">
+                                        <input style="box-shadow: none; width:100px;"
+                                            class="form-control border-0 fs-5 fw-bold p-0 rounded-0"
+                                            placeholder="724,000" type="number" id="form4" />
+                                        <div class="dropdown">
+                                            <button style="background: rgba(0, 0, 255, 0.1);"
+                                                class="btn btn-light dropdown-toggle border-0" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="./assets/twemoji_flag-nigeria.svg" alt="">&ensp;
+                                                NGN
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="./assets/twemoji_flag-us-outlying-islands.svg"
+                                                            alt="">&ensp; USD
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h6 class="m-0">1 USD = NGN 724</h6>
+                                <button class="btn btn-primary">Continue</button>
+                            </div>
+                        </div>
+                        <!-- Notifications -->
+                        <div class="d-flex mt-4 justify-content-between align-items-center">
+                            <h5>Notifications</h5>
+                            <!-- top notification -->
+                            <div class="d-flex align-items-center">
+                                <button class="btn bg-transparent">See all</button>
+                                <div class="dropdown">
+                                    <button style="background: rgba(0, 0, 255, 0.1);"
+                                        class="btn btn-light dropdown-toggle border-0" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Daily Updates
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                LOREM
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- notify content -->
+                        <div class="card p-4 mt-3 rounded-0 border-0">
+                            <div class="d-flex align-items-center w-100 mb-2 gap-3">
+                                <img style="background-color: rgba(0,0,225,0.02); width: 30px; height: 35px;"
+                                    class="p-1 rounded" src="./assets/Vector.svg" alt="">
+                                <div class="text fw-bold">
+                                    <h6 class="mb-0">You Sent <span class="text-danger">$200</span> to Timothy Nick</h6>
+                                    <p class="mb-0 text-secondary" style="font-size:12px;">now</p>
+                                </div>
+                                <!-- dropdown and menu -->
+                                <div class="ms-auto p-2">
+                                    <img class="btn p-1" src="./assets/ic_twotone-plus.svg" alt="">
+                                    <img class="btn p-1" src="./assets/zondicons_navigation-more.svg" alt="">
+                                </div>
+                            </div>
+                            <!-- notify content -->
+                            <div class="d-flex align-items-center w-100 mb-2 gap-3">
+                                <img style="background-color: rgba(0,0,225,0.02); width: 30px; height: 35px;"
+                                    class="p-1 rounded" src="./assets/Vector.svg" alt="">
+                                <div class="text fw-bold">
+                                    <h6 class="mb-0">You recieved <span class="text-success">$1000</span> from Linda
+                                        Smith</h6>
+                                    <p class="mb-0 text-secondary" style="font-size:12px;">4 hours ago</p>
+                                </div>
+                                <!-- dropdown and menu -->
+                                <div class="ms-auto p-2">
+                                    <img class="btn p-1" src="./assets/ic_twotone-plus.svg" alt="">
+                                    <img class="btn p-1" src="./assets/zondicons_navigation-more.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ||COL_2|| -->
+                    <div class="col-5 p-1 bg-transparent">
+                        <!-- Virtual card -->
+                        <div style="background-image:linear-gradient(290deg,#002481, #1FAEFF); width:395px; height:200px;"
+                            class="card position-relative overflow-hidden border-0">
+                            <div class="position-absolute w-25 h-100 z-0">
+                                <img class="position-absolute top-50 w-100" src="./assets/Subtract.svg" alt="">
+                                <img class="position-absolute w-100 h-100" src="./assets/Subtract (1).svg" alt="">
+                            </div>
+                            <!-- virtual text -->
+                            <div style="font-size:12px;" class="z-1 h-100 w-100 py-3 px-4 text-white">
+                                <p class="m-0 mb-3">VIRTUAL CARD</p>
+                                <img class="mb-2" src="./assets/chip.svg" alt="">
+                                <h6 class="fs-4 mb-2">0000 8888 2222 3333</h6>
+                                <div class="w-50 mb-2 d-flex justify-content-between">
+                                    <small>0000</small>
+                                    <img src="./assets/Group 9.svg" alt="">
+                                </div>
+                                <div class="d-flex justify-content-end align-items-center gap-1">
+                                    <p style="font-size:6px;" class="m-0">VALID <br> TILL</p>
+                                    <p class="m-0">07/24</p>
+                                    <img src="./assets/Azapay ICON 03 1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Transactions -->
+                        <div class="card border-0 mt-3 p-2">
+                            <div class="d-flex mb-2 justify-content-between">
+                                <h5 class="m-0">Transactions</h5>
+                                <div class="d-flex gap-2">
+                                    <a class="text-decoration-none text-primary" href="#">All</a>
+                                    <a class="text-decoration-none text-secondary" href="#">Send</a>
+                                    <a class="text-decoration-none text-secondary" href="#">Recent</a>
+                                </div>
+                            </div>
+                            <!-- transact item -->
+                            <div style="font-size:13px;" class="bg-light mt-2 p-3">
+                                <div class="d-flex justify-content-between">
+                                    <small>16:23, 12 Dec 2022</small>
+                                    <small class="fw-bold">$1,500</small>
+                                </div>
+                                <div class="d-flex pt-2 fw-bold justify-content-between">
+                                    <p class="m-0">Converted USD to NGN</p>
+                                    <small class="text-success">Completed</small>
+                                </div>
+                            </div>
+                            <!-- transact item -->
+                            <div style="font-size:13px;" class="bg-light mt-2 p-3">
+                                <div class="d-flex justify-content-between">
+                                    <small>16:23, 12 Dec 2022</small>
+                                    <small class="fw-bold">$2,500</small>
+                                </div>
+                                <div class="d-flex pt-2 fw-bold justify-content-between">
+                                    <p class="m-0">Funded Wallet</p>
+                                    <small class="text-warning">Pending</small>
+                                </div>
+                            </div>
+                            <!-- transact item -->
+                            <div style="font-size:13px;" class="bg-light mt-2 p-3">
+                                <div class="d-flex justify-content-between">
+                                    <small>16:23, 12 Dec 2022</small>
+                                    <small class="fw-bold">NGN 2,500</small>
+                                </div>
+                                <div class="d-flex pt-2 fw-bold justify-content-between">
+                                    <p class="m-0">Recieved payment from Chris Dave</p>
+                                    <small class="text-success">Completed</small>
+                                </div>
+                            </div>
+                            <!-- transact item -->
+                            <div style="font-size:13px;" class="bg-light mt-2 p-3">
+                                <div class="d-flex justify-content-between">
+                                    <small>16:23, 12 Dec 2022</small>
+                                    <small class="fw-bold">$1,500</small>
+                                </div>
+                                <div class="d-flex pt-2 fw-bold justify-content-between">
+                                    <p class="m-0">Converted USD to NGN</p>
+                                    <small class="text-success">Completed</small>
+                                </div>
+                            </div>
+                            <!-- transact item -->
+                            <div style="font-size:13px;" class="bg-light mt-2 p-3">
+                                <div class="d-flex justify-content-between">
+                                    <small>16:23, 12 Dec 2022</small>
+                                    <small class="fw-bold">$2,500</small>
+                                </div>
+                                <div class="d-flex pt-2 fw-bold justify-content-between">
+                                    <p class="m-0">Funded Wallet</p>
+                                    <small class="text-danger">Decline</small>
+                                </div>
+                            </div>
+                            <!-- transact item -->
+                            <div style="font-size:13px;" class="bg-light mt-2 p-3">
+                                <div class="d-flex justify-content-between">
+                                    <small>16:23, 12 Dec 2022</small>
+                                    <small class="fw-bold">$1,500</small>
+                                </div>
+                                <div class="d-flex pt-2 fw-bold justify-content-between">
+                                    <p class="m-0">Converted USD to NGN</p>
+                                    <small class="text-success">Completed</small>
+                                </div>
+                            </div>
+                            <!-- transact item -->
+                            <div style="font-size:13px;" class="bg-light mt-2 p-3">
+                                <div class="d-flex justify-content-between">
+                                    <small>16:23, 12 Dec 2022</small>
+                                    <small class="fw-bold">$1,500</small>
+                                </div>
+                                <div class="d-flex pt-2 fw-bold justify-content-between">
+                                    <p class="m-0">Converted USD to NGN</p>
+                                    <small class="text-success">Completed</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
